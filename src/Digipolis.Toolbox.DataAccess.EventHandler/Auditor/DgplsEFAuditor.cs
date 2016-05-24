@@ -111,7 +111,7 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
 
             string typeofevent = auditLog.EntityFullName + ":" + auditLog.Operation;
 
-            MyEventHandler.Publish<AuditLog>("CUD", typeofevent, auditLog, "MyUserName", "MyIp", "Mycomponbentid", "Mycomponentname");
+            MyEventHandler.Publish<AuditLog>("CUD", typeofevent, auditLog, "EF", "EntityFramework");
 
 
         }
