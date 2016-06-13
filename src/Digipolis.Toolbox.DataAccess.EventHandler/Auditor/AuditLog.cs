@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 using Digipolis.Toolbox.DataAccess.EventHandler.Auditor;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Converters;
 
 namespace Digipolis.Toolbox.DataAccess.EventHandler
 {
@@ -22,11 +24,10 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler
         public string EntityFullName { get; set; }
         public string Entity { get; set; }
         public string EntityId { get; set; }
-        public string User { get; set; }
-
         public string OldValue { get; set; }
         public string NewValue { get; set; }
         public string PropertyName { get; set; }
+        [JsonConverter(typeof(StringEnumConverter))]
         public AuditType Operation { get; set; }
     }
 }

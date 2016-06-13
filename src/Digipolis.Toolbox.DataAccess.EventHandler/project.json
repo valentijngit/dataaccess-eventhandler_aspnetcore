@@ -1,12 +1,12 @@
 {
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "Dataaccess eventhandler",
 	"authors": [ "Koen Stroobants" ],
 	"tags": [ "" ],
 	"projectUrl": "",
 	"licenseUrl": "",
   "dependencies": {
-    "Digipolis.Toolbox.Eventhandler": "0.2.0",
+    "Digipolis.Toolbox.Eventhandler": "1.0.0",
     "EntityFramework": "6.1.2"
   },
   "frameworks": {

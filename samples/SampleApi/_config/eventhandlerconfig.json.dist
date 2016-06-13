@@ -1,7 +1,14 @@
 {
-    "AppSettings": {
-        "AppName": "%%app.name%%",
-        "DataDirectory": "%%app.datadirectory%%",
-        "TempDirectory": "%%app.tempdirectory%%"
-    }
+  "EventHandler": {
+    "MessageVersion": "%%eventhandler.messageversion%%",
+    "AppId": "%%app.id%%",
+    "AppName": "%%app.name%%",
+    "InstanceId": "%%app.instanceid%%",
+    "InstanceName": "%%app.instancename%%",
+    "EventEndpointUrl": "%%eventhandler.endpointurl%%",
+    "EventEndpointNamespace": "%%eventhandler.endpointnamespace%%",
+    "EventEndpointApikey": "%%eventhandler.endpointapikey%%",
+    "EventEndpointOwnerkey": "%%eventhandler.endpointownerkey%%",
+    "HideEventHandlerErrors": "%%eventhandler.hideeventhandlererrors%%"
+  }
 }
