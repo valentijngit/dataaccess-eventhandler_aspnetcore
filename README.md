@@ -26,7 +26,7 @@ To add the toolbox to a project, you add the package to the project.json :
 
 In Visual Studio you can also use the NuGet Package Manager to do this.
 
-This Toolbox depends on "Digipolis.Toolbox.EventHandler" so you need to includ and configure this as well !
+This Toolbox depends on "Digipolis.Toolbox.EventHandler" so you need to include and configure this as well !
 
 ## Configuration in Startup.Configure
 
