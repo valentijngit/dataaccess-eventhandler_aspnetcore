@@ -20,7 +20,7 @@ To add the toolbox to a project, you add the package to the project.json :
 
 ``` json
 "dependencies": {
-    "Digipolis.Toolbox.DataAccess.EventHandler":  "1.0.0"
+    "Digipolis.Toolbox.DataAccess.EventHandler":  "1.0.1"
  }
 ```
 
