@@ -9,6 +9,7 @@ using Microsoft.Extensions.OptionsModel;
 using Digipolis.Toolbox.Eventhandler;
 using SampleApi.Business;
 using SampleApi.Entities;
+using System.Threading.Tasks;
 
 namespace SampleApi.Api.Controllers
 {
@@ -67,6 +68,17 @@ namespace SampleApi.Api.Controllers
         {         
 
             return Ok(MyDemoEntityBusiness.Save(myentity)); //Return code is not ok, but you get the point...
+        }
+        
+
+        [HttpPut("{id:int}")]
+        public async Task<IActionResult> UpdateAsync(int id, [FromBody] MyDemoEntity model)
+        {
+           
+                await MyDemoEntityBusiness.SaveAsync(model);
+                return Ok();
+            
+          
         }
 
         [HttpDelete]

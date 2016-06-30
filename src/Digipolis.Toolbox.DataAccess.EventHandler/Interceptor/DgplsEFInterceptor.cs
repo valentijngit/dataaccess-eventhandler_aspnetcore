@@ -25,6 +25,7 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler
 
         public void NonQueryExecuted(DbCommand command, DbCommandInterceptionContext<int> interceptionContext)
         {
+          
             //WriteLog(string.Format(" IsAsync: {0}, Command Text: {1}", interceptionContext.IsAsync, command.CommandText));
         }
 

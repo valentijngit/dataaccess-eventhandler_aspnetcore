@@ -69,6 +69,30 @@ namespace SampleApi.Business
             }
         }
 
+
+        public async Task SaveAsync(MyDemoEntity demoentity)
+        {
+            using (var uow = _uowProvider.CreateUnitOfWork(false))
+            {
+                var repository = uow.GetRepository<MyDemoEntity>();
+                if (demoentity.Id == 0)
+                {
+                    repository.Add(demoentity);
+                }
+                else
+                {
+                    repository.Update(demoentity);
+                }
+
+              
+                await uow.SaveChangesAsync();              
+               
+
+            }
+        }
+
+
+
         public void Delete(int id)
         {
             using (var uow = _uowProvider.CreateUnitOfWork(false))

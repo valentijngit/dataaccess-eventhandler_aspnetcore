@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Threading.Tasks;
 using SampleApi.Entities;
 
 namespace SampleApi.Business
@@ -9,5 +10,6 @@ namespace SampleApi.Business
         MyDemoEntity Get(int id);
         List<MyDemoEntity> GetAll();
         int Save(MyDemoEntity demoentity);
+        Task SaveAsync(MyDemoEntity demoentity);
     }
 }

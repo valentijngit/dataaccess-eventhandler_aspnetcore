@@ -53,10 +53,13 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
 
                 var props = entityType.GetProperties();
                 includedProperties.AddRange(props.Select(p => p.Name));
-                
 
-                if (entry.State == EntityState.Modified)
+
+            if (entry.State == EntityState.Modified)
+            {
+                try
                 {
+
                     var originalValues = workingContext.Entry(entry.Entity).GetDatabaseValues();
                     var changedProperties = (from propertyName in originalValues.PropertyNames
                                              let propertyEntry = entry.Property(propertyName)
@@ -84,23 +87,39 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
                             PropertyName = changedProperty.Name
                         }))
                         {
-                        SendOutEvent(auditItem);
+                            SendOutEvent(auditItem);
                         }
-                        
+
                     }
                 }
-                else
+                catch (NotSupportedException)
                 {
-                    var auditItem = new AuditLog
+                    //yup this is a dirty workaround (TODO)
+                    SendOutEvent(new AuditLog
                     {
                         Created = DateTime.Now,
                         EntityFullName = entry.Entity.GetType().FullName,
                         Entity = JsonConvert.SerializeObject(entry.Entity),
                         EntityId = JsonConvert.SerializeObject(entityKey),
                         Operation = auditType,
-                    };
+                        OldValue = "NotSupportedException due to async call",
+                        NewValue = "NotSupportedException due to async call",
+                        PropertyName = "NotSupportedException due to async call"
+                    });
+                }
+            }
+            else
+            {
+                var auditItem = new AuditLog
+                {
+                    Created = DateTime.Now,
+                    EntityFullName = entry.Entity.GetType().FullName,
+                    Entity = JsonConvert.SerializeObject(entry.Entity),
+                    EntityId = JsonConvert.SerializeObject(entityKey),
+                    Operation = auditType,
+                };
 
-                  SendOutEvent(auditItem);
+                SendOutEvent(auditItem);
 
 
             }
