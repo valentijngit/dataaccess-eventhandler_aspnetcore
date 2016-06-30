@@ -92,6 +92,7 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
 
                     }
                 }
+
                 catch (NotSupportedException)
                 {
                     //yup this is a dirty workaround (TODO)
