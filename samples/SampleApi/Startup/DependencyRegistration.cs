@@ -1,4 +1,4 @@
-using Digipolis.Toolbox.Eventhandler;
+using Digipolis.Eventhandler;
 using Microsoft.Extensions.DependencyInjection;
 using SampleApi.Business;
 

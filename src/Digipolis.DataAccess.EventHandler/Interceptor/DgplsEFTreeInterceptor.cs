@@ -7,9 +7,9 @@
 //using System.Data.Entity.Infrastructure.Interception;
 //using System.Linq;
 //using System.Threading.Tasks;
-//using Digipolis.Toolbox.Eventhandler;
+//using Digipolis.Eventhandler;
 
-//namespace Digipolis.Toolbox.DataAccess.EventHandler
+//namespace Digipolis.DataAccess.EventHandler
 //{
 //    //public class DgplsEFInterceptor : IDbCommandInterceptor
 //    public class DgplsEFTreeInterceptor : IDbCommandTreeInterceptor

@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Data.Entity;
 using Microsoft.Extensions.OptionsModel;
-using Toolbox.DataAccess.Context;
-using Toolbox.DataAccess.Options;
+using Digipolis.DataAccess.Context;
+using Digipolis.DataAccess.Options;
 using SampleApi.Entities;
 
 namespace SampleApi.DataAccess

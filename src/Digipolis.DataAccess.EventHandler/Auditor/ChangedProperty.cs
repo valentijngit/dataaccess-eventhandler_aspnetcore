@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler
+namespace Digipolis.DataAccess.EventHandler
 {
     internal class ChangedProperty
     {

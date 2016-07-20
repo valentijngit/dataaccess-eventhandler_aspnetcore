@@ -8,10 +8,10 @@ using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
-using Digipolis.Toolbox.DataAccess.EventHandler;
-using Digipolis.Toolbox.DataAccess.EventHandler.Auditor;
+using Digipolis.DataAccess.EventHandler;
+using Digipolis.DataAccess.EventHandler.Auditor;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler
+namespace Digipolis.DataAccess.EventHandler
 {
     public static class DbContextExts
     {

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Data.Entity.Infrastructure.Interception;
 using System.Linq;
 using System.Threading.Tasks;
-using Digipolis.Toolbox.Eventhandler;
+using Digipolis.Eventhandler;
 using Microsoft.AspNet.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler
+namespace Digipolis.DataAccess.EventHandler
 {
     public static class AppBuilderExtensions
     {

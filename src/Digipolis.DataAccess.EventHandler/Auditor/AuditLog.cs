@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using Digipolis.Toolbox.DataAccess.EventHandler.Auditor;
+using Digipolis.DataAccess.EventHandler.Auditor;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler
+namespace Digipolis.DataAccess.EventHandler
 {
-    [Serializable]
     public class AuditLog
     {
         public AuditLog()

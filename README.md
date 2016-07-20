@@ -20,17 +20,17 @@ To add the toolbox to a project, you add the package to the project.json :
 
 ``` json
 "dependencies": {
-    "Digipolis.Toolbox.DataAccess.EventHandler":  "1.0.2"
+    "Digipolis.DataAccess.EventHandler":  "2.0.0"
  }
 ```
 
 In Visual Studio you can also use the NuGet Package Manager to do this.
 
-This Toolbox depends on "Digipolis.Toolbox.EventHandler" so you need to include and configure this as well !
+This Toolbox depends on "Digipolis.EventHandler" so you need to include and configure this as well !
 
 ## Configuration in Startup.Configure
 
-The Event toolbox is registered in the _**Configure**_ method of the *Startup* class. (Remember to setup the configureservices part of the Digipolis.Toolbox.EventHandler package as well!)
+The Event toolbox is registered in the _**Configure**_ method of the *Startup* class. (Remember to setup the configureservices part of the Digipolis.EventHandler package as well!)
 
 ``` csharp
     app.UseDataAccessEventHandler();

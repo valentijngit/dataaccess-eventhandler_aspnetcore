@@ -1,6 +1,6 @@
 using System.Data.Entity;
 using System.IO;
-using Digipolis.Toolbox.DataAccess.EventHandler;
+using Digipolis.DataAccess.EventHandler;
 using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -9,10 +9,10 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.PlatformAbstractions;
 using SampleApi.DataAccess;
 using SampleApi.Options;
-using Toolbox.DataAccess;
-using Toolbox.DataAccess.Postgres;
-using Toolbox.Eventhandler;
-using Toolbox.WebApi;
+using Digipolis.DataAccess;
+using Digipolis.DataAccess.Postgres;
+using Digipolis.Eventhandler;
+using Digipolis.WebApi;
 
 namespace SampleApi
 {

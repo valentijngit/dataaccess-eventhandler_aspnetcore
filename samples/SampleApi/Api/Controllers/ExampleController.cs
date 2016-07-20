@@ -6,7 +6,7 @@ using SampleApi.Options;
 using Microsoft.AspNet.Mvc;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.OptionsModel;
-using Digipolis.Toolbox.Eventhandler;
+using Digipolis.Eventhandler;
 using SampleApi.Business;
 using SampleApi.Entities;
 using System.Threading.Tasks;

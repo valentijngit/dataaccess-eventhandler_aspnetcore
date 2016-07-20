@@ -1,0 +1,43 @@
+{
+	"version": "2.0.0",
+	"description": "Dataaccess eventhandler",
+	"authors": [ "Koen Stroobants" ],
+	"packOptions": {
+        "tags": [ "Dataaccess", "Eventhandler", "Toolbox", "HTTP Headers" ],
+        "repository": {
+            "type": "git",
+            "url": "http://github.com/digipolisantwerp/dataaccess-eventhandler_aspnetcore"
+        },
+        "projectUrl": "http://github.com/digipolisantwerp/dataaccess-eventhandler_aspnetcore",
+        "licenseUrl": "http://github.com/digipolisantwerp/dataaccess-eventhandler_aspnetcore/LICENSE.txt",
+		"repository": {
+            "type": "git",
+            "url": "http://github.com/digipolisantwerp/dataaccess-eventhandler_aspnetcore"
+        },
+    },
+	"dependencies": {
+	"Digipolis.Eventhandler": "2.0.0",
+	"Microsoft.EntityFrameworkCore": "1.0.0"
+	},
+	"frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50",
+      "dependencies": {
+        "System.Data.Common": "*"
+      }
+    }
+	},
+	"exclude": [
+	"node_modules",
+	"bower_components",
+	".grunt"
+	],
+	"publishExclude": [
+	"node_modules",
+	"bower_components",
+	"**.xproj",
+	"**.user",
+	"**.vspscc"
+	]
+}
+

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.Common;
+using Microsoft.EntityFrameworkCore;
 using System.Data.Entity;
 using System.Data.Entity.Core.Common.CommandTrees;
 using System.Data.Entity.Core.Common.CommandTrees.ExpressionBuilder;
@@ -8,10 +9,10 @@ using System.Data.Entity.Core.Metadata.Edm;
 using System.Data.Entity.Infrastructure.Interception;
 using System.Linq;
 using System.Threading.Tasks;
-using Digipolis.Toolbox.DataAccess.EventHandler.Auditor;
-using Digipolis.Toolbox.Eventhandler;
+using Digipolis.DataAccess.EventHandler.Auditor;
+using Digipolis.Eventhandler;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler
+namespace Digipolis.DataAccess.EventHandler
 {
     public class DgplsEFInterceptor : IDbCommandInterceptor
 

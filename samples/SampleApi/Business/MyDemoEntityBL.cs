@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Logging;
 using SampleApi.Entities;
-using Toolbox.DataAccess;
+using Digipolis.DataAccess;
 
 namespace SampleApi.Business
 {

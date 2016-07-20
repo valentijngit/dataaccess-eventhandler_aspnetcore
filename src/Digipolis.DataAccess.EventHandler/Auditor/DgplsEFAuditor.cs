@@ -7,10 +7,10 @@ using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
-using Digipolis.Toolbox.Eventhandler;
+using Digipolis.Eventhandler;
 using Newtonsoft.Json;
 
-namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
+namespace Digipolis.DataAccess.EventHandler.Auditor
 {
     public class DgplsEFAuditor
     {
