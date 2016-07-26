@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Digipolis.Toolbox.DataAccess.EventHandler.Auditor;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
+using System.Data.Entity.Core;
 
 namespace Digipolis.Toolbox.DataAccess.EventHandler
 {
@@ -22,8 +23,8 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler
 
         public DateTime Created { get; set; }
         public string EntityFullName { get; set; }
-        public string Entity { get; set; }
-        public string EntityId { get; set; }
+        public Object Entity { get; set; }
+        public EntityKey EntityId { get; set; }
         public string OldValue { get; set; }
         public string NewValue { get; set; }
         public string PropertyName { get; set; }

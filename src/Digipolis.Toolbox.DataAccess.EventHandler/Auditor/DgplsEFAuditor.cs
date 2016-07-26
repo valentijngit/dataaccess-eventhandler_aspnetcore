@@ -1,14 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using System;
-using System.Collections.Generic;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
-using System.Linq;
 using Digipolis.Toolbox.Eventhandler;
-using Newtonsoft.Json;
 
 namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
 {
@@ -79,8 +74,8 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
                         {
                             Created = DateTime.Now,
                             EntityFullName = entry.Entity.GetType().FullName,
-                            Entity = JsonConvert.SerializeObject(entry.Entity),
-                            EntityId = JsonConvert.SerializeObject(entityKey),
+                            Entity = entry.Entity,
+                            EntityId = entityKey,
                             Operation = auditType,
                             OldValue = changedProperty.OriginalValue.ToString(),
                             NewValue = changedProperty.CurrentValue.ToString(),
@@ -100,8 +95,8 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
                     {
                         Created = DateTime.Now,
                         EntityFullName = entry.Entity.GetType().FullName,
-                        Entity = JsonConvert.SerializeObject(entry.Entity),
-                        EntityId = JsonConvert.SerializeObject(entityKey),
+                        Entity = entry.Entity,
+                        EntityId = entityKey,
                         Operation = auditType,
                         OldValue = "NotSupportedException due to async call",
                         NewValue = "NotSupportedException due to async call",
@@ -115,8 +110,8 @@ namespace Digipolis.Toolbox.DataAccess.EventHandler.Auditor
                 {
                     Created = DateTime.Now,
                     EntityFullName = entry.Entity.GetType().FullName,
-                    Entity = JsonConvert.SerializeObject(entry.Entity),
-                    EntityId = JsonConvert.SerializeObject(entityKey),
+                    Entity = entry.Entity,
+                    EntityId = entityKey,
                     Operation = auditType,
                 };
 

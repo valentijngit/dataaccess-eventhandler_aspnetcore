@@ -33,7 +33,7 @@
     "Toolbox.Errors": "1.2.0",
     "Toolbox.Json": "1.0.0",
     "Toolbox.WebApi": "1.2.2",
-    "Digipolis.Toolbox.EventHandler": "1.0.1",
+    "Digipolis.Toolbox.EventHandler": "1.0.2",
     "Digipolis.Toolbox.DataAccess.EventHandler": "1.0.2"
   },
     "frameworks" : {

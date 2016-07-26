@@ -5,8 +5,8 @@
 	"tags": [ "" ],
 	"projectUrl": "",
 	"licenseUrl": "",
-  "dependencies": {
-    "Digipolis.Toolbox.Eventhandler": "1.0.1",
+  "dependencies": { 
+    "Digipolis.Toolbox.Eventhandler": "1.0.2",
     "EntityFramework": "6.1.2"
   },
   "frameworks": {
