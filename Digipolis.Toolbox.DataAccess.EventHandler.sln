@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CA226397-4C7E-6D8A-E257-29842CFD8E22}"
 	ProjectSection(SolutionItems) = preProject
@@ -17,8 +17,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{6AFC0762-158
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{F1E5AEFE-E7B0-DDC4-21F5-D2495AB5B1A0}"
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.Toolbox.DataAccess.EventHandler", "src\Digipolis.Toolbox.DataAccess.EventHandler\Digipolis.Toolbox.DataAccess.EventHandler.xproj", "{2BB43036-873A-042F-CB66-4AFACB61FE4E}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Digipolis.Toolbox.DataAccess.EventHandler.UnitTests", "test\Digipolis.Toolbox.DataAccess.EventHandler.UnitTests\Digipolis.Toolbox.DataAccess.EventHandler.UnitTests.xproj", "{D177D118-A1F0-6EA6-1BE1-9F1FE0FD067C}"
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "SampleApi", "samples\SampleApi\SampleApi.xproj", "{194A3858-4CC5-EA26-1572-A36766280224}"
@@ -31,10 +29,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2BB43036-873A-042F-CB66-4AFACB61FE4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2BB43036-873A-042F-CB66-4AFACB61FE4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2BB43036-873A-042F-CB66-4AFACB61FE4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2BB43036-873A-042F-CB66-4AFACB61FE4E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D177D118-A1F0-6EA6-1BE1-9F1FE0FD067C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D177D118-A1F0-6EA6-1BE1-9F1FE0FD067C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D177D118-A1F0-6EA6-1BE1-9F1FE0FD067C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -48,7 +42,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2BB43036-873A-042F-CB66-4AFACB61FE4E} = {6AFC0762-158B-45C2-0B49-E28F768C767C}
 		{D177D118-A1F0-6EA6-1BE1-9F1FE0FD067C} = {F1E5AEFE-E7B0-DDC4-21F5-D2495AB5B1A0}
 		{194A3858-4CC5-EA26-1572-A36766280224} = {354E6B8C-24C3-4DA0-BCD7-24C79C89ACE8}
 	EndGlobalSection
